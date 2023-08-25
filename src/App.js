@@ -12,7 +12,7 @@ import Applications from "./component/Applications";
 import Profile from "./component/Profile";
 import CreateJobs from "./component/recruiter/CreateJobs";
 import MyJobs from "./component/recruiter/MyJobs";
-import JobApplications from "./component/recruiter/JobApplications";
+import JobApplications from "./component/recruiter/PitchApplications";
 import AcceptedApplicants from "./component/recruiter/AcceptedApplicants";
 import RecruiterProfile from "./component/recruiter/Profile";
 import MessagePopup from "./lib/MessagePopup";
