@@ -7,7 +7,6 @@ const JobApplicant = require("../db/Investors");
 const Recruiter = require("../db/Fundfinder");
 const Job = require("../db/Job");
 const Application = require("../db/Application");
-const Rating = require("../db/Rating"); 
 
 //The express.Router() function is used to create a new router object. 
 //This function is used when you want to create a new router object in your program to handle requests.
@@ -696,20 +695,8 @@ router.put("/applications/:id", jwtAuth, (req, res) => {
   const id = req.params.id;
   const status = req.body.status;
 
-  // "applied", // when a applicant is applied
-  // "shortlisted", // when a applicant is shortlisted
-  // "accepted", // when a applicant is accepted
-  // "rejected", // when a applicant is rejected
-  // "deleted", // when any job is deleted
-  // "cancelled", // an application is cancelled by its author or when other application is accepted
-  // "finished", // when job is over
-
   if (user.type === "fund-finder") {
     if (status === "accepted") {
-      // get job id from application
-      // get job info for maxPositions count
-      // count applications that are already accepted
-      // compare and if condition is satisfied, then save
 
       Application.findOne({
         _id: id,
