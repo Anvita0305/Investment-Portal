@@ -10,10 +10,6 @@ import {
   Avatar,
 } from "@material-ui/core";
 import axios from "axios";
-import ChipInput from "material-ui-chip-input";
-import FileUploadInput from "../lib/FileUploadInput";
-import DescriptionIcon from "@material-ui/icons/Description";
-import FaceIcon from "@material-ui/icons/Face";
 
 import { SetPopupContext } from "../App";
 
@@ -299,61 +295,6 @@ const Profile = (props) => {
                 education={education}
                 setEducation={setEducation}
               />
-              {/* <Grid item>
-                <ChipInput
-                  className={classes.inputBox}
-                  label="Skills"
-                  variant="outlined"
-                  helperText="Press enter to add skills"
-                  value={profileDetails.skills}
-                  onAdd={(chip) =>
-                    setProfileDetails({
-                      ...profileDetails,
-                      skills: [...profileDetails.skills, chip],
-                    })
-                  }
-                  onDelete={(chip, index) => {
-                    let skills = profileDetails.skills;
-                    skills.splice(index, 1);
-                    setProfileDetails({
-                      ...profileDetails,
-                      skills: skills,
-                    });
-                  }}
-                  fullWidth
-                />
-              </Grid> */}
-              {/* <Grid item>
-                <FileUploadInput
-                  className={classes.inputBox}
-                  label="Business Card (Images only)"
-                  icon={<DescriptionIcon />}
-                  uploadTo={apiList.uploadResume}
-                  handleInput={handleInput}
-                  identifier={"resume"}
-                />
-              </Grid>
-              <Grid item>
-              <Button
-                variant="contained"
-                className={classes.statusBlock}
-                color="primary"
-                onClick={() => getResume()}
-                style={{alignItems:"center"}}
-              >
-                View Business Card
-              </Button>
-              </Grid> */}
-              {/* <Grid item>
-                <FileUploadInput
-                  className={classes.inputBox}
-                  label="Profile Photo (.jpg/.png)"
-                  icon={<FaceIcon />}
-                  uploadTo={apiList.uploadProfileImage}
-                  handleInput={handleInput}
-                  identifier={"profile"}
-                />
-              </Grid> */}
               
             </Grid>
             <Button

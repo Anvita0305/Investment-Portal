@@ -2,15 +2,11 @@ import { useState, useContext } from "react";
 import {Grid,TextField,Button,Typography,makeStyles,Paper,MenuItem,Input,} from "@material-ui/core";
 import axios from "axios";
 import { Redirect } from "react-router-dom";
-import ChipInput from "material-ui-chip-input";
-import DescriptionIcon from "@material-ui/icons/Description";
-import FaceIcon from "@material-ui/icons/Face";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/material.css";
 
 import PasswordInput from "../lib/PasswordInput";
 import EmailInput from "../lib/EmailInput";
-import FileUploadInput from "../lib/FileUploadInput";
 import { SetPopupContext } from "../App";
 
 import apiList from "../lib/apiList";
@@ -27,83 +23,6 @@ const useStyles = makeStyles((theme) => ({
     width: "400px",
   },
 }));
-
-const MultifieldInput = (props) => {
-  const classes = useStyles();
-  const { education, setEducation } = props;
-
-  return (
-    <>
-      {/* {education.map((obj, key) => (
-        <Grid
-          item
-          container
-          className={classes.inputBox}
-          key={key}
-          style={{ paddingLeft: 0, paddingRight: 0 }}
-        >
-          <Grid item xs={6}> */}
-            {/* <TextField
-              label={`Institution Name #${key + 1}`}
-              value={education[key].institutionName}
-              onChange={(event) => {
-                const newEdu = [...education];
-                newEdu[key].institutionName = event.target.value;
-                setEducation(newEdu);
-              }}
-              variant="outlined"
-            /> */}
-          {/* </Grid>
-          <Grid item xs={3}> */}
-            {/* <TextField
-              label="Start Year"
-              value={obj.startYear}
-              variant="outlined"
-              type="number"
-              onChange={(event) => {
-                const newEdu = [...education];
-                newEdu[key].startYear = event.target.value;
-                setEducation(newEdu);
-              }}
-            /> */}
-          {/* </Grid>
-          <Grid item xs={3}> */}
-            {/* <TextField
-              label="End Year"
-              value={obj.endYear}
-              variant="outlined"
-              type="number"
-              onChange={(event) => {
-                const newEdu = [...education];
-                newEdu[key].endYear = event.target.value;
-                setEducation(newEdu);
-              }}
-            /> */}
-          {/* </Grid>
-        </Grid>
-      ))}
-      <Grid item> */}
-        {/* <Button
-          variant="contained"
-          color="secondary"
-          onClick={() =>
-            setEducation([
-              ...education,
-              {
-                institutionName: "",
-                startYear: "",
-                endYear: "",
-              },
-            ])
-          }
-          className={classes.inputBox}
-        >
-          Add another institution details
-        </Button> */}
-      {/* </Grid> */}
-    </>
-  );
-};
 
 const Signup = (props) => {
   const classes = useStyles();
@@ -381,55 +300,6 @@ const Signup = (props) => {
        
         {signupDetails.type === "investor" ? (
           <>
-            {/* <MultifieldInput
-              education={education}
-              setEducation={setEducation}
-            /> */}
-            {/* <Grid item>
-              <ChipInput
-                className={classes.inputBox}
-                label="Contact Number"
-                variant="outlined"
-                // helperText="Press enter to add skills"
-                onChange={(chips) =>
-                  setSignupDetails({ ...signupDetails, contactNo: chips })
-                }
-              />
-            </Grid> */}
-            {/* <Grid item>
-              <FileUploadInput
-                className={classes.inputBox}
-                label="Bussiness Card(Images only)"
-                icon={<DescriptionIcon />}
-                // value={files.resume}
-                // onChange={(event) =>
-                //   setFiles({
-                //     ...files,
-                //     resume: event.target.files[0],
-                //   })
-                // }
-                uploadTo={apiList.uploadResume}
-                handleInput={handleInput}
-                identifier={"resume"}
-              />
-            </Grid> */}
-            {/* <Grid item>
-              <FileUploadInput
-                className={classes.inputBox}
-                label="Profile Photo (.jpg/.png)"
-                icon={<FaceIcon />}
-                // value={files.profileImage}
-                // onChange={(event) =>
-                //   setFiles({
-                //     ...files,
-                //     profileImage: event.target.files[0],
-                //   })
-                // }
-                uploadTo={apiList.uploadProfileImage}
-                handleInput={handleInput}
-                identifier={"profile"}
-              />
-            </Grid> */}
           </>
         ) : (
           <>
