@@ -5,11 +5,9 @@ const jwtAuth = require("../lib/jwtAuth");
 const User = require("../db/User");
 const JobApplicant = require("../db/Investors");
 const Recruiter = require("../db/Fundfinder");
-const Job = require("../db/Job");
+const Job = require("../db/Details");
 const Application = require("../db/Application");
 
-//The express.Router() function is used to create a new router object. 
-//This function is used when you want to create a new router object in your program to handle requests.
 const router = express.Router();
 
 // To add new job
@@ -17,10 +15,8 @@ router.post("/jobs", jwtAuth, (req, res) => {
   const user = req.user;
 
   if (user.type != "fund-finder") {
-    // applicant trying to add new job 
-    // not authorised 
     res.status(401).json({
-      message: "You don't have permissions to add jobs",
+      message: "Permission Denied!",
     });
     return;
   }
@@ -47,14 +43,11 @@ router.post("/jobs", jwtAuth, (req, res) => {
       res.json({ message: "Job added successfully to the database" });
     })
     .catch((err) => {
-      //Whenever any user sends an invalid request to the server, 
-      //the server immediately reports it and generates an HTTP based 400 bad request error.
       res.status(400).json(err);
     });
 });
 
 
-// to get all the jobs [pagination] [for recruiter personal and for everyone]
 router.get("/jobs", jwtAuth, (req, res) => {
   let user = req.user;
 
@@ -62,7 +55,6 @@ router.get("/jobs", jwtAuth, (req, res) => {
   let sortParams = {};
 
 
-  // to list down jobs posted by a particular recruiter
   if (user.type === "fund-finder" && req.query.myjobs) {
     findParams = {
       ...findParams,
@@ -240,13 +232,13 @@ router.get("/jobs/:id", jwtAuth, (req, res) => {
     });
 });
 
-// to update info of a particular job
+
 router.put("/jobs/:id", jwtAuth, (req, res) => {
   const user = req.user;
   if (user.type != "fund-finder") {
     // 401- unauthorised
     res.status(401).json({
-      message: "You don't have permissions to change the job details",
+      message: "You don't have permissions to change the details",
     });
     return;
   }
