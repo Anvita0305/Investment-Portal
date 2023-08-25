@@ -23,22 +23,28 @@ Please refer the Documentation below for more details [Documentation.pdf](https:
 
 ## Screenshots
 #### Chatbot
-![ChatBot](https://github.com/Anvita0305/Investment-Portal/assets/78889572/5de69e05-1c3a-45ee-be97-50794ab2a635)
-#### All Pitches on Investor Side
-![All Pitches](https://github.com/Anvita0305/Investment-Portal/assets/78889572/75684968-97b9-4a68-b885-cee97a2c2372)
-### Chat
-![Chat](https://github.com/Anvita0305/Investment-Portal/assets/78889572/562703b8-445d-403f-aae8-660d961355a2)
-### News
-![News](https://github.com/Anvita0305/Investment-Portal/assets/78889572/a76d5944-20bb-4054-9ccf-11b0e250ef91)
-### Mail
-![Mail](https://github.com/Anvita0305/Investment-Portal/assets/78889572/16b90cc5-d03b-4d2b-9697-baa7e8c01a39)
-### Meet
-![Meet](https://github.com/Anvita0305/Investment-Portal/assets/78889572/d994a697-c5f2-4fef-868b-8adb7fdbba9d)
-### Fund-Finder's Pitches
-![My Pitches](https://github.com/Anvita0305/Investment-Portal/assets/78889572/dc9fa2af-295a-42f2-aab5-d1197270d3ce)
-### Pitch Form
-![Pitch Form](https://github.com/Anvita0305/Investment-Portal/assets/78889572/3c0a816a-fddc-4bee-90f7-59c36277a5d9)
+![ChatBot](https://github.com/Anvita0305/Investment-Portal/assets/78889572/2ccbc1ad-4478-46e4-8820-abbaf5a72a12)
 
+#### All Pitches on Investor Side
+![All Pitches](https://github.com/Anvita0305/Investment-Portal/assets/78889572/a85eb08f-6918-4f4a-a1da-2f2173c42410)
+
+### Chat
+![Chat](https://github.com/Anvita0305/Investment-Portal/assets/78889572/8d344201-9f41-4bc2-9adf-cdad6217018f)
+
+### News
+![News](https://github.com/Anvita0305/Investment-Portal/assets/78889572/6102817e-3ad9-4ab2-ba3f-ff9ea788c885)
+
+### Mail
+![Mail](https://github.com/Anvita0305/Investment-Portal/assets/78889572/0cebb6df-4a9d-45e5-860a-bf5f280d5219)
+
+### Meet
+![Meet](https://github.com/Anvita0305/Investment-Portal/assets/78889572/29fb7e2e-d8ac-458c-9f12-3543abc9a4bd)
+
+### Fund-Finder's Pitches
+![My Pitches](https://github.com/Anvita0305/Investment-Portal/assets/78889572/21f9b66c-96a3-419f-98ba-ef1f56e01cdc)
+
+### Pitch Form
+![Pitch Form](https://github.com/Anvita0305/Investment-Portal/assets/78889572/ab6d2ba8-96e5-4eaf-9ec1-d753623f3a3b)
 
 
 ## Authors
